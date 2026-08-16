@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>the word game</title>
+	<link href="src/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<main id="container">
+		<div class="bkg focus"></div>
+
+		<header class="app-header focus">
+			<div class="brand">
+<!--				<span class="brand-dot"></span>-->
+				<img class="brand-logo" src="src/media/logo%20bgr.png" alt="The Word Game logo">
+				<h1>the word game</h1>
+			</div>
+			<p class="tagline">chain words by their last letter</p>
+		</header>
+
+		<section class="focus" id="input">
+			<input id="word" type="text" placeholder="type a word" autocomplete="off" autocapitalize="off" spellcheck="false" />
+		</section>
+
+		<section class="focus" id="buttons">
+			<button id="submit" type="submit">Check word</button>
+			<button id="all">All words</button>
+			<button id="clear">Clear words</button>
+		</section>
+
+		<section id="edit">
+			<input type="text" id="edittxt" placeholder="edit words in csv format" autocomplete="off" spellcheck="false" />
+			<button class="focus" id="editbtn">Save words</button>
+		</section>
+
+		<section class="focus" id="info">
+			<p id="lastword">Last Word: —</p>
+			<p id="lastletter">Last Letter: —</p>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<p>&copy; 2026 <a href="https://aaryan-soni.web.app/" target="_blank" rel="noopener">Aaryan Soni</a> &middot; <a class="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a></p>
+		</div>
+	</footer>
+
+	<script src="src/script.js" type="module"></script>
+
+</body>
+
+</html>

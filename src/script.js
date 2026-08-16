@@ -1,6 +1,8 @@
 import { showAlert, showConfirm } from './modal.js';
 
-//some global elements
+if (window.location.hostname === "the-wordgame.web.app" || window.location.hostname === "the-wordgame.firebaseapp.com") {
+	window.location.href = "https://wordgame.aasoni.dev" + window.location.pathname + window.location.search;
+}
 
 //main word input
 var word = document.getElementById('word');
